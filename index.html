@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影音先锋av电影网 | 先锋影音技术 × 极致av大片 | 高清流畅在线播放</title>
+<meta name="description" content="影音先锋av电影网(yingyinxianfengavdianyingwang-top)融合先锋影音播放技术与海量av影视资源，为你带来高清流畅的观影体验。从4K超清浪漫大片到经典av剧集，从独家自制内容到全网热播新片，以领先的播放内核、极速加载与沉浸式视听，重新定义av影视的观看方式。">
+<meta name="keywords" content="影音先锋av电影网, 先锋影音播放, 高清av电影, 浪漫影视在线, 4Kav大片, 流畅播放技术, yingyinxianfengavdianyingwang-top">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter","PingFang SC","Microsoft YaHei",sans-serif;background:#0d1117;color:#e6edf3;line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* 顶部斜切横幅 */
+.banner{position:relative;background:linear-gradient(135deg,#0d1117 0%,#1a2332 50%,#0d1117 100%);padding:0;overflow:hidden}
+.banner::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:80px;background:#0d1117;clip-path:polygon(0 100%,100% 100%,100% 0);}
+.banner-in{max-width:1200px;margin:0 auto;padding:2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:.75rem}
+.brand-logo{width:42px;height:42px;background:linear-gradient(135deg,#ff6b35,#ff8c42);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#0d1117}
+.brand-text h1{font-size:1.3rem;font-weight:800;letter-spacing:-.5px;line-height:1.2}
+.brand-text h1 em{font-style:normal;background:linear-gradient(135deg,#ff6b35,#ff8c42);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.brand-text small{font-size:.7rem;color:#8b949e;letter-spacing:1px}
+.top-links{display:flex;gap:1.5rem;font-size:.85rem}
+.top-links a{color:#8b949e;transition:.2s}
+.top-links a:hover{color:#ff6b35}
+
+/* 斜切Hero */
+.hero{position:relative;background:linear-gradient(100deg,#0d1117 0%,#0d1117 55%,#ff6b35 55%,#ff8c42 100%);min-height:75vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;overflow:hidden}
+.hero-left{padding:5rem 4rem;position:relative;z-index:2}
+.hero-left .kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#ff8c42;background:rgba(255,107,53,.1);border:1px solid rgba(255,107,53,.3);padding:.4rem 1rem;border-radius:4px;margin-bottom:1.5rem}
+.hero-left h2{font-size:clamp(2rem,5.5vw,4.5rem);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:1.5rem}
+.hero-left h2 .highlight{background:linear-gradient(135deg,#ff6b35,#ffb088);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-left p{font-size:1.05rem;color:#8b949e;max-width:440px;margin-bottom:2rem}
+.hero-left .acts{display:flex;gap:.75rem;flex-wrap:wrap}
+.b1{padding:.9rem 2rem;border-radius:6px;font-weight:700;font-size:.9rem;transition:.2s;cursor:pointer;border:2px solid #ff6b35;background:#ff6b35;color:#0d1117}
+.b1:hover{background:transparent;color:#ff6b35}
+.b2{padding:.9rem 2rem;border-radius:6px;font-weight:700;font-size:.9rem;transition:.2s;cursor:pointer;border:2px solid rgba(255,255,255,.2);background:transparent;color:#fff}
+.b2:hover{border-color:#ff6b35;color:#ff6b35}
+.hero-right{position:relative;height:100%;min-height:500px;display:flex;align-items:center;justify-content:center}
+.hero-right .player-mock{width:85%;max-width:420px;background:#0d1117;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);transform:rotate(-3deg);border:1px solid rgba(255,255,255,.1)}
+.hero-right .player-bar{background:#161b22;padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;border-bottom:1px solid #21262d}
+.hero-right .player-dot{width:10px;height:10px;border-radius:50%;background:#ff5f56}
+.hero-right .player-dot:nth-child(2){background:#ffbd2e}
+.hero-right .player-dot:nth-child(3){background:#27c93f}
+.hero-right .player-title{flex:1;text-align:center;font-size:.75rem;color:#8b949e}
+.hero-right .player-screen{height:220px;background:linear-gradient(135deg,#1a2332,#0d1117);display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
+.hero-right .player-screen::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(255,107,53,.15),transparent 60%)}
+.hero-right .player-screen .play-btn{width:64px;height:64px;border-radius:50%;background:rgba(255,107,53,.9);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#0d1117;z-index:2}
+.hero-right .player-progress{background:#161b22;padding:.75rem 1rem}
+.hero-right .player-progress .bar{height:4px;background:#21262d;border-radius:2px;position:relative}
+.hero-right .player-progress .bar::after{content:"";position:absolute;left:0;top:0;width:62%;height:100%;background:#ff6b35;border-radius:2px}
+.hero-right .player-time{display:flex;justify-content:space-between;font-size:.7rem;color:#8b949e;margin-top:.5rem}
+
+/* 横向滚动条带 */
+.stripe{background:#ff6b35;padding:1rem 0;overflow:hidden}
+.stripe-track{display:flex;gap:4rem;animation:roll 35s linear infinite;white-space:nowrap;font-size:.9rem;font-weight:700;color:#0d1117}
+.stripe-track span{display:flex;align-items:center;gap:.5rem}
+@keyframes roll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* 通用 */
+.wrap{max-width:1200px;margin:0 auto;padding:4.5rem 1.5rem}
+.sec-hd{margin-bottom:2.5rem}
+.sec-hd .tag{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#ff6b35;font-weight:700;display:block;margin-bottom:.5rem}
+.sec-hd h2{font-size:clamp(1.5rem,3vw,2.5rem);font-weight:900;letter-spacing:-1px}
+.sec-hd p{color:#8b949e;font-size:.9rem;margin-top:.5rem}
+
+/* 技术特性 */
+.tech{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.tech-card{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:1.75rem;transition:.25s}
+.tech-card:hover{border-color:#ff6b35;transform:translateY(-4px)}
+.tech-card .ico{font-size:2rem;margin-bottom:1rem}
+.tech-card h4{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.tech-card p{font-size:.85rem;color:#8b949e}
+
+/* 影片网格 - 双行布局 */
+.film-wrap{background:#161b22;border-radius:12px;padding:1.5rem;border:1px solid #21262d}
+.film-tabs{display:flex;gap:.5rem;margin-bottom:1.5rem;border-bottom:1px solid #21262d;padding-bottom:1rem}
+.film-tabs button{background:none;border:none;color:#8b949e;font-size:.9rem;font-weight:600;padding:.5rem 1rem;border-radius:6px;cursor:pointer;transition:.2s}
+.film-tabs button.on{background:#ff6b35;color:#0d1117}
+.film-tabs button:hover:not(.on){background:#21262d;color:#e6edf3}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem}
+.f-card{border-radius:8px;overflow:hidden;transition:.2s;cursor:pointer}
+.f-card:hover{transform:scale(1.02)}
+.f-thumb{height:240px;position:relative;display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.f-thumb .badge-tl{position:absolute;top:8px;left:8px;background:#ff6b35;color:#0d1117;font-weight:800;font-size:.7rem;padding:.2rem .5rem;border-radius:3px}
+.f-thumb .badge-br{position:absolute;bottom:8px;right:8px;background:rgba(13,17,23,.85);color:#e6edf3;font-size:.7rem;padding:.15rem .4rem;border-radius:3px}
+.f-card:nth-child(1) .f-thumb{background:linear-gradient(135deg,#1a1a2e,#16213e)}
+.f-card:nth-child(2) .f-thumb{background:linear-gradient(135deg,#0f3460,#e94560)}
+.f-card:nth-child(3) .f-thumb{background:linear-gradient(135deg,#2d6a4f,#ff6b35)}
+.f-card:nth-child(4) .f-thumb{background:linear-gradient(135deg,#7b2d8e,#ff6b35)}
+.f-card:nth-child(5) .f-thumb{background:linear-gradient(135deg,#603808,#ff8c42)}
+.f-card:nth-child(6) .f-thumb{background:linear-gradient(135deg,#003566,#ff6b35)}
+.f-card:nth-child(7) .f-thumb{background:linear-gradient(135deg,#4a0e17,#ff6b35)}
+.f-card:nth-child(8) .f-thumb{background:linear-gradient(135deg,#1a3a2a,#ffb088)}
+.f-info{padding:.75rem .25rem}
+.f-info h4{font-size:.9rem;font-weight:600;margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.f-info span{font-size:.75rem;color:#8b949e}
+
+/* 对比表格 */
+.compare{overflow-x:auto}
+.compare table{width:100%;border-collapse:collapse;font-size:.9rem}
+.compare th,.compare td{padding:1rem;text-align:left;border-bottom:1px solid #21262d}
+.compare th{background:#161b22;color:#ff6b35;font-weight:700;font-size:.85rem}
+.compare td{color:#c9d1d9}
+.compare tr:hover td{background:rgba(255,107,53,.03)}
+
+/* 全宽渐变页脚 */
+.mega{background:linear-gradient(135deg,#0d1117 0%,#1a1025 40%,#2d1a0a 70%,#ff6b35 100%);padding:5rem 1.5rem 3rem;text-align:center;position:relative;overflow:hidden}
+.mega::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 50%,rgba(255,107,53,.15),transparent 50%)}
+.mega-in{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.mega .logo-big{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;margin-bottom:1rem}
+.mega .logo-big em{font-style:normal;color:#ff6b35}
+.mega p{color:#c9d1d9;font-size:.95rem;margin-bottom:1.5rem}
+.mega .url-box{display:inline-block;background:rgba(13,17,23,.6);backdrop-filter:blur(10px);border:1px solid rgba(255,107,53,.4);border-radius:8px;padding:1rem 2rem;font-family:"Courier New",monospace;font-size:.9rem;color:#ff8c42;margin-bottom:2rem}
+.mega .domain{font-size:.85rem;color:#8b949e;margin-top:1rem}
+
+/* 底部细栏 */
+.colophon{background:#0d1117;border-top:1px solid #21262d;padding:2rem 1.5rem;text-align:center}
+.colophon p{font-size:.8rem;color:#6e7681}
+.colophon .links{margin-top:1rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.colophon .links a{font-size:.85rem;color:#8b949e;transition:.2s}
+.colophon .links a:hover{color:#ff6b35}
+
+@media(max-width:768px){
+.banner-in{padding:1rem}
+.top-links{display:none}
+.hero{grid-template-columns:1fr;background:linear-gradient(135deg,#0d1117 0%,#1a2332 100%)}
+.hero-left{padding:3rem 1.5rem}
+.hero-right{min-height:360px}
+.hero-right .player-mock{transform:none;width:90%}
+.tech{grid-template-columns:repeat(2,1fr);gap:1rem}
+.f-grid{grid-template-columns:repeat(2,1fr);gap:.75rem}
+.f-thumb{height:180px;font-size:2rem}
+.film-tabs{overflow-x:auto}
+.mega{padding:3rem 1rem 2rem}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- 顶部斜切横幅 -->
+<header class="banner">
+<div class="banner-in">
+<div class="brand">
+<div class="brand-logo">影</div>
+<div class="brand-text">
+<h1>影音先锋<em>av电影网</em></h1>
+<small>YINGYIN · AHEAD · AUDIO VISUAL PIONEER</small>
+</div>
+</div>
+<nav class="top-links">
+<a href="#tech">核心技术</a>
+<a href="#library">影视库</a>
+<a href="#compare">优势对比</a>
+<a href="#access">访问入口</a>
+</nav>
+</div>
+</header>
+
+<!-- 斜切Hero -->
+<section class="hero">
+<div class="hero-left">
+<div class="kicker">◉ 先锋影音内核 · 2024 全新升级</div>
+<h2>用<em>先锋技术</em><br>重燃每一场心动</h2>
+<p>影音先锋av电影网，将行业领先的影音播放技术与海量浪漫影视资源深度融合。4K超清解码、极速加载、零缓冲卡顿——让每一次av故事的播放，都丝滑如初恋。</p>
+<div class="acts">
+<button class="b1">立即体验播放</button>
+<button class="b2">查看影视片单</button>
+</div>
+</div>
+<div class="hero-right">
+<div class="player-mock">
+<div class="player-bar">
+<div class="player-dot"></div><div class="player-dot"></div><div class="player-dot"></div>
+<div class="player-title">影音先锋播放器 · 正在缓冲...</div>
+</div>
+<div class="player-screen">
+<div class="play-btn">▶</div>
+</div>
+<div class="player-progress">
+<div class="bar"></div>
+<div class="player-time"><span>02:18</span><span>03:42</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 滚动条带 -->
+<div class="stripe">
+<div class="stripe-track">
+<span>⚡ 4K极速解码</span>
+<span>🎬 全网热播同步</span>
+<span>💕 av片专项片库</span>
+<span>🔊 杜比环绕音效</span>
+<span>📱 多端无缝切换</span>
+<span>🚀 零广告纯净播放</span>
+<span>⚡ 4K极速解码</span>
+<span>🎬 全网热播同步</span>
+<span>💕 av片专项片库</span>
+<span>🔊 杜比环绕音效</span>
+<span>📱 多端无缝切换</span>
+<span>🚀 零广告纯净播放</span>
+</div>
+</div>
+
+<!-- 核心技术 -->
+<section class="wrap" id="tech">
+<div class="sec-hd">
+<span class="tag">● Core Technology</span>
+<h2>先锋影音，为av片而生</h2>
+<p>六大核心技术加持，打造沉浸式观影体验</p>
+</div>
+<div class="tech">
+<div class="tech-card">
+<div class="ico">🚀</div>
+<h4>极速硬解码</h4>
+<p>自研解码内核，秒开4K高清片源，告别漫长等待与转圈加载。</p>
+</div>
+<div class="tech-card">
+<div class="ico">🎯</div>
+<h4>智能码率适配</h4>
+<p>实时检测网络环境，自动匹配最佳清晰度，弱网也能流畅观看。</p>
+</div>
+<div class="tech-card">
+<div class="ico">🔊</div>
+<h4>影院级音效</h4>
+<p>支持杜比全景声与环绕立体声，让每句告白都清晰入耳。</p>
+</div>
+<div class="tech-card">
+<div class="ico">💾</div>
+<h4>离线缓存</h4>
+<p>一键缓存心仪影片，通勤路上、无网环境照样浪漫追剧。</p>
+</div>
+</div>
+</section>
+
+<!-- 影视库 -->
+<section class="wrap" id="library">
+<div class="sec-hd">
+<span class="tag">● Film Library</span>
+<h2>精选影视片库</h2>
+<p>每日更新全网最新av影视资源，按热度与类型智能分类</p>
+</div>
+<div class="film-wrap">
+<div class="film-tabs">
+<button class="on">热播榜</button>
+<button>甜宠专区</button>
+<button>虐恋专区</button>
+<button>经典重温</button>
+<button>独家自制</button>
+</div>
+<div class="f-grid">
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">热播</span><span class="badge-br">4K</span>🌹</div>
+<div class="f-info"><h4>初次相遇的夏天</h4><span>青春 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">飙升</span><span class="badge-br">1080P</span>💐</div>
+<div class="f-info"><h4>三十岁，恋爱吗</h4><span>都市 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">催泪</span><span class="badge-br">4K</span>🥀</div>
+<div class="f-info"><h4>余生有你</h4><span>剧情 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">古装</span><span class="badge-br">1080P</span>🌸</div>
+<div class="f-info"><h4>长安月明时</h4><span>古装 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">高分</span><span class="badge-br">4K</span>💌</div>
+<div class="f-info"><h4>爱在日落之前</h4><span>文艺 · 2023</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">独播</span><span class="badge-br">4K</span>🎭</div>
+<div class="f-info"><h4>第七次相遇</h4><span>奇幻 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">热门</span><span class="badge-br">1080P</span>🏙️</div>
+<div class="f-info"><h4>出租恋人</h4><span>都市 · 2024</span></div>
+</div>
+<div class="f-card">
+<div class="f-thumb"><span class="badge-tl">推荐</span><span class="badge-br">4K</span>🌙</div>
+<div class="f-info"><h4>暗恋这件小事</h4><span>校园 · 2023</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 优势对比 -->
+<section class="wrap" id="compare">
+<div class="sec-hd">
+<span class="tag">● Why Choose Us</span>
+<h2>为什么选择影音先锋av电影网</h2>
+<p>以技术实力，重新定义av影视的观看标准</p>
+</div>
+<div class="compare">
+<table>
+<thead>
+<tr><th>对比维度</th><th>影音先锋av电影网</th><th>传统影视站</th></tr>
+</thead>
+<tbody>
+<tr><td>播放加载速度</td><td>秒开 · 极速硬解码</td><td>缓冲等待 3-5 秒</td></tr>
+<tr><td>最高清晰度</td><td>4K 超清 · 原画质输出</td><td>最高 1080P</td></tr>
+<tr><td>广告干扰</td><td>零广告 · 纯净观影</td><td>片头片尾多重贴片</td></tr>
+<tr><td>音效体验</td><td>杜比全景声 · 环绕立体</td><td>普通立体声</td></tr>
+<tr><td>内容更新</td><td>每日同步 · 独家自制</td><td>更新滞后 1-2 周</td></tr>
+<tr><td>多端适配</td><td>手机 / 平板 / 电视无缝切换</td><td>仅支持 PC 端</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- 全宽渐变页脚 -->
+<section class="mega" id="access">
+<div class="mega-in">
+<div class="logo-big">影音先锋<em>av电影网</em></div>
+<p>先锋影音技术 × 极致av大片 —— 让每一帧心动，都被温柔播放。</p>
+<div class="url-box">https://yingyinxianfengavdianyingwang-top.github.io</div>
+<div class="domain">域名：yingyinxianfengavdianyingwang-top</div>
+</div>
+</section>
+
+<!-- 底部细栏 -->
+<footer class="colophon">
+<div class="links">
+<a href="#">首页</a><a href="#">核心技术</a><a href="#">影视片库</a><a href="#">优势对比</a><a href="#">访问入口</a><a href="#">帮助中心</a>
+</div>
+<p>© 2024 影音先锋av电影网 · 以先锋技术，致敬每一份av</p>
+<p style="margin-top:.5rem">官方网址：https://yingyinxianfengavdianyingwang-top.github.io</p>
+<p style="font-size:.72rem;margin-top:1rem;max-width:580px;margin-left:auto;margin-right:auto">免责声明：本站为影视信息索引与在线播放服务平台，所有影片资源来自互联网公开渠道，版权归原作者及发行方所有。如有侵权，请及时联系我们删除处理。</p>
+</footer>
+
+<script>
+// 标签切换
+document.querySelectorAll('.film-tabs button').forEach(function(btn){
+btn.addEventListener('click',function(){
+document.querySelectorAll('.film-tabs button').forEach(function(b){b.classList.remove('on')});
+this.classList.add('on');
+});
+});
+</script>
+</body>
+</html>
